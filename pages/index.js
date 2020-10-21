@@ -10,6 +10,12 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1>this is alex portfo</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+          repellat nostrum nobis alias eligendi sequi odit aliquid voluptates
+          ratione facere dolorem vero sed deleniti inventore perferendis,
+          tempora culpa nulla? Iste?
+        </p>
       </main>
 
       <footer className={styles.footer}>footer</footer>
