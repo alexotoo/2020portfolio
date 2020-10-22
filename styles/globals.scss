@@ -1,0 +1,79 @@
+:root {
+  --white-color: #fdfdfd;
+  --whitedeep-color: #a1aeb1;
+  --bluedeep-color: #0c1951;
+  --bluelight-color: #00b4d8;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap");
+
+// font-family: 'Lora', serif;
+// font-family: 'Montserrat', sans-serif;
+
+// font-family: 'Oswald', sans-serif;
+
+html {
+  box-sizing: border-box;
+
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Oswald", serif;
+  background-color: var(--white-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", serif;
+}
+
+li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+p {
+  color: #2b2828;
+  font-size: 2rem;
+  font-weight: 100;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0c1951;
+  letter-spacing: 0.25rem;
+  text-shadow: 2px 2px var(--bluelight-color);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}

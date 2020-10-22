@@ -1,24 +1,27 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import Button from "../components/Button";
+//import styles from "../styles/Home.scss";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>alex otoo portfolio</title>
       </Head>
-
-      <main className={styles.main}>
+      <main className="red">
+        <Button />
         <h1>this is alex portfo</h1>
+        {/* <img src="/images/project1.png" alt="" /> */}
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
           repellat nostrum nobis alias eligendi sequi odit aliquid voluptates
           ratione facere dolorem vero sed deleniti inventore perferendis,
           tempora culpa nulla? Iste?
         </p>
+        <a href="">hello there</a>
       </main>
 
-      <footer className={styles.footer}>footer</footer>
+      <footer>footer</footer>
     </div>
   );
 }
