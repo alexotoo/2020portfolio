@@ -1,0 +1,120 @@
+//this file styles all the components on this website
+
+//COMPONENTS
+
+//1.Layout
+
+//2.Header
+.header {
+  //padding: 0 3rem 0 3rem;
+  background-color: var(--white-color);
+  width: 100%;
+  min-height: 60px;
+  border-bottom: 1px solid var(--whitedeep-color);
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  justify-content: space-around;
+}
+.nav {
+  background-color: var(--bluedeep-color);
+  position: fixed;
+  top: 60px;
+  height: 100%;
+  width: 280px;
+  transition: ease-out 250ms;
+  left: 0;
+  z-index: 20;
+
+  &__list {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__item {
+    list-style: none;
+  }
+  &__link {
+    text-decoration: none;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    color: var(--textdark-color);
+  }
+}
+
+.isClosed {
+  //left: -300px;
+  transform: translateX(-450px);
+  transition: ease 300ms;
+}
+.dpImage {
+  border-radius: 50%;
+  width: 60px;
+  height: 50px;
+  //margin-left: 40%;
+}
+.logo {
+  height: 40px;
+  width: 180px;
+}
+
+//3. button
+.button {
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  position: relative;
+  background-color: var(--bluedeep-color);
+  border: none;
+  color: var(--textdark-color);
+  padding: 10px;
+  width: 160px;
+  text-align: center;
+  transition-duration: 0.5s;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-top: 2rem;
+}
+
+.button:hover {
+  background: var(--textdark-color);
+  box-shadow: 0.5rem 0.5rem 1rem var(--graylight-color);
+  color: var(--bluelight-color);
+}
+
+.button:after {
+  content: "";
+  background: #00b4d8;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.button:hover:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+.button:active {
+  color: #0c1951;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+//4.Menu
+
+//5.Footer

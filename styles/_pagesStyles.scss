@@ -1,0 +1,124 @@
+//utils for all pages
+
+p {
+  color: var(--textdark-color);
+  font-size: 1.7rem;
+  font-weight: 100;
+}
+hr {
+  border: 2px solid var(--textdark-color);
+  background-color: var(--bluelight-color);
+  height: 5px;
+  margin: 2rem 0 2rem 0;
+}
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--textdark-color);
+  margin-top: 3rem;
+  letter-spacing: 0.25rem;
+}
+.blue {
+  color: var(--bluedeep-color);
+}
+
+main {
+  padding: 0 4rem 0 4rem;
+}
+.heroImage {
+  position: relative;
+  z-index: 1;
+}
+.hero {
+  //border: 1px solid red;
+}
+.hero_text-box {
+  height: 1px;
+  width: 70%;
+  //padding: 0 4rem 0 4rem;
+  position: relative;
+  top: -20rem;
+  z-index: 5;
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-size: 1.5rem;
+  background: inherit;
+  margin: 0 auto;
+}
+.hero_text-box::after {
+  content: "";
+  width: 300px;
+  height: 150px;
+  background: inherit;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  bottom: 0;
+  box-shadow: inset 0 0 0 100px rgba(44, 43, 43, 0.315);
+  filter: blur(10px);
+}
+.hero_text {
+  position: relative;
+  color: var(--white-color);
+  z-index: 10;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px var(--bluedeep-color);
+}
+.hero_text-greet {
+  position: relative;
+  top: 20rem;
+  opacity: 0;
+  animation: greet 1s ease-out 1s 1 forwards;
+  letter-spacing: 0.5rem;
+  font-size: 3rem;
+  z-index: 100;
+  text-shadow: 2px 2px var(--white-color);
+}
+
+//hero animation
+@keyframes greet {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+    color: var(--bluedeep-color);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(1) scaleY(0.8);
+  }
+
+  80% {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1.5);
+    color: var(--bluedeep-color);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+    color: var(--bluedeep-color);
+    top: 0;
+  }
+}
+
+//about section
+.about-content__img {
+  padding-top: 2rem;
+}
+
+@keyframes filtered {
+  0% {
+    filter: none;
+  }
+
+  95% {
+    filter: grayscale(1);
+  }
+
+  100% {
+    filter: none;
+  }
+}

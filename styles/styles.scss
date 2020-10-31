@@ -1,0 +1,10 @@
+//this is the scss file for all the application
+
+//all resets
+@use '/styles/rootReset';
+
+//all styles for pages
+@use '/styles/pagesStyles';
+
+//all styles for components
+@use "/styles/componentsStyles";
