@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "./Button";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
@@ -19,7 +20,10 @@ export default function ContactForm() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "ContactForm", ...contactMessage }),
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...contactMessage,
+      }),
     })
       .then(() => alert("message sent"))
       .catch((error) => alert(error));
@@ -39,7 +43,7 @@ export default function ContactForm() {
       onSubmit={handleSubmit}
       className="form"
     >
-      <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="form-name" value="ContactForm" />
       <label>Name</label>
       <input
         type="text"
