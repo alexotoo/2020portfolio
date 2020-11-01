@@ -5,6 +5,22 @@ p {
   font-size: 1.7rem;
   font-weight: 100;
 }
+.pb1 {
+  padding-bottom: 2rem;
+}
+.mt {
+  margin-top: 3rem;
+}
+.mt1 {
+  margin-top: 4rem;
+}
+.textshadow {
+  font-size: 3rem;
+  color: var(--textdark-color);
+  text-shadow: var(--bluedeep-color) 2px 2px;
+  letter-spacing: 2px;
+  padding-bottom: 2rem;
+}
 hr {
   border: 2px solid var(--textdark-color);
   background-color: var(--bluelight-color);
@@ -14,12 +30,13 @@ hr {
 .image {
   width: 100%;
 }
+
 .title {
   font-size: 3rem;
-  font-weight: 700;
   color: var(--textdark-color);
   margin-top: 3rem;
   letter-spacing: 0.25rem;
+  padding-bottom: 2rem;
 }
 .blue {
   color: var(--bluedeep-color);
@@ -109,6 +126,10 @@ main {
   padding-top: 2rem;
 }
 
+.aboutImage {
+  animation: filtered 10s linear 4s infinite backwards;
+}
+
 @keyframes filtered {
   0% {
     filter: none;
@@ -120,5 +141,68 @@ main {
 
   100% {
     filter: none;
+  }
+}
+
+//projects
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 70vh;
+  margin-top: -30px;
+
+  &__skillswrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    row-gap: 2rem;
+  }
+  &__skills {
+    background-color: var(--whitedeep-color);
+    border-radius: 20px;
+    padding: 15px 15px 25px 15px;
+    box-shadow: 12px 16px 12px -9px rgba(0, 0, 0, 0.29);
+    text-align: center;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__skillicon {
+    width: 100%;
+    border-radius: 10px;
+    opacity: 1;
+    transition: ease 500ms;
+  }
+  &__skilliconname {
+    color: var(--textdark-color);
+  }
+  &__project-card {
+    border-radius: 20px;
+    overflow: hidden;
+    opacity: 1;
+    transition: ease 300ms;
+    margin-bottom: 2rem;
+    border: 1px solid #bbbbbb;
+    padding-bottom: 2rem;
+  }
+  &__project-card:hover {
+    opacity: 0.7;
+    transform: scale(1.02);
+    box-shadow: 12px 16px 12px -9px rgba(0, 0, 0, 0.192);
+  }
+  &__projectwrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.25rem;
+    column-gap: 2rem;
+  }
+  &__codelinks {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--textdark-color);
   }
 }

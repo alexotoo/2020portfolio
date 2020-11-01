@@ -87,6 +87,9 @@
   box-shadow: 0.5rem 0.5rem 1rem var(--graylight-color);
   color: var(--bluelight-color);
 }
+.button:hover a {
+  color: var(--bluelight-color);
+}
 
 .button:after {
   content: "";
