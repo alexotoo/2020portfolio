@@ -248,7 +248,8 @@ export default function Home() {
           <hr className="mt1" />
         </section>
         <section className="contact">
-          <form
+          <ContactForm />
+          {/* <form
             className="form"
             action="/pages/submited"
             name="contact"
@@ -269,7 +270,7 @@ export default function Home() {
             <label>Message</label>
             <textarea name="message" />
             <input className="submit" type="submit" value="Send" />
-          </form>
+          </form> */}
           <div className="contact__contacts">
             <div className="contact__contacts-info">
               <FaMobileAlt className="info_icon " />
