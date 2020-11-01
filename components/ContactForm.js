@@ -15,12 +15,13 @@ export default function ContactForm() {
 
   const handleSubmit = (e) => {
     const contactMessage = { name, email, message };
+    console.log(contactMessage);
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...contactMessage }),
     })
-      .then(() => alert("Success!"))
+      .then(() => alert("message sent"))
       .catch((error) => alert(error));
 
     e.preventDefault();
@@ -50,12 +51,11 @@ export default function ContactForm() {
       <label>Message</label>
       <textarea
         name="message"
-        name="message"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
 
-      <input className="submit" type="submit" value="Send" />
+      <input className="submit" type="submit" />
       {/* <label>
         Your Name:{" "}
         <input
