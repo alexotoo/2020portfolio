@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import Layout from "../components/Layout";
 import "../styles/styles.scss";
 import { FaMobileAlt, FaEnvelope } from "react-icons/fa";
+import ContactForm from "../components/ContactForm";
 
 export default function Home() {
   return (
@@ -247,11 +248,12 @@ export default function Home() {
           <hr className="mt1" />
         </section>
         <section className="contact">
-          <form
+          <ContactForm />
+          {/* <form
             className="form"
             action="/pages/submited"
             name="contact"
-            method="post"
+            method="POST"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
@@ -268,7 +270,7 @@ export default function Home() {
             <label>Message</label>
             <textarea name="message" />
             <input className="submit" type="submit" value="Send" />
-          </form>
+          </form> */}
           <div className="contact__contacts">
             <div className="contact__contacts-info">
               <FaMobileAlt className="info_icon " />
