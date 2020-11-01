@@ -8,12 +8,10 @@ export default function Home() {
   return (
     <Layout>
       <header className="hero">
-        <Image
+        <img
           src="/images/profilbg.jpg"
-          width="1920"
-          height="1200"
-          alt="Profile Picture"
-          className="heroImage"
+          alt="hero imagw"
+          className="heroImage image"
         />
         <div className="hero_text-box">
           <h2 className="hero_text-greet">Hello!</h2>
@@ -43,12 +41,10 @@ export default function Home() {
               <Button>Contact me</Button>
             </div>
             <div className="about-content__img">
-              <Image
+              <img
                 src="/images/profile-pic.png"
-                width="2059"
-                height="3157"
                 alt="Profile Picture"
-                className="heroImage"
+                className="heroImage image"
               />
             </div>
 
