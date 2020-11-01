@@ -206,3 +206,94 @@ main {
     color: var(--textdark-color);
   }
 }
+
+//contact
+.contact {
+  background-color: var(--bluedeep-color);
+  min-height: 70vh;
+  margin: 0 -4rem 0 -4rem;
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //color: $colorBasic;
+    font-size: 1.5rem;
+    &-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      h1 {
+        padding: 1rem 2rem;
+        margin: 0.5rem;
+        transition: all ease-out 200ms;
+      }
+      h1:hover {
+        border-radius: 50px;
+        // background-color: $colorWhite;
+      }
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  padding: 2rem;
+  align-items: center;
+}
+.form > input {
+  padding: 10px;
+  border-radius: 7px;
+  border-color: transparent;
+  margin-bottom: 1rem;
+  outline: none;
+}
+.form > input:last-of-type {
+  margin-top: 1rem;
+}
+.form > * {
+  font-size: 1.5rem;
+  width: 95%;
+  transition: all ease-out 300ms;
+}
+.form > label {
+  margin-left: 3px;
+  padding-bottom: 3px;
+}
+.form textarea {
+  min-height: 10rem;
+  border-color: transparent;
+  border-radius: 7px;
+  outline: none;
+}
+.form input[type="submit"] {
+  font-weight: bolder;
+  margin: 20px auto;
+  width: 100px;
+  cursor: pointer;
+}
+.form > *:focus {
+  width: 100%;
+  background-color: var(--whitedeep-color);
+}
+.form input[type="submit"]:hover {
+  background-color: var(--whitedeep-color);
+}
+.form input[type="submit"]:active {
+  transform: translateY(2px);
+}
+
+.info_icon {
+  color: var(--white-color);
+  font-size: 3.5rem;
+}
+
+@media (min-width: 1024px) {
+  .form {
+    padding-right: 10rem;
+  }
+}

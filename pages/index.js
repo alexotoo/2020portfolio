@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Button from "../components/Button";
-import Image from "next/image";
 import Layout from "../components/Layout";
 import "../styles/styles.scss";
+import { FaMobileAlt, FaEnvelope } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       <header className="hero">
         <img
           src="/images/profilbg.jpg"
-          alt="hero imagw"
+          alt="hero image"
           className="heroImage image"
         />
         <div className="hero_text-box">
@@ -245,6 +245,40 @@ export default function Home() {
             </div>
           </div>
           <hr className="mt1" />
+        </section>
+        <section className="contact">
+          <form
+            className="form"
+            action="/pages/submited"
+            name="contact"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="contact_number" />
+            <label>Name</label>
+            <input type="text" name="user_name" placeholder="your name" />
+            <label>Email</label>
+            <input
+              type="email"
+              name="user_email"
+              placeholder="example@mail.com"
+            />
+            <label>Message</label>
+            <textarea name="message" />
+            <input className="submit" type="submit" value="Send" />
+          </form>
+          <div className="contact__contacts">
+            <div className="contact__contacts-info">
+              <FaMobileAlt className="info_icon " />
+              <h1>+244 024 411 3073</h1>
+            </div>
+            <div className="contact__contacts-info">
+              <FaEnvelope className="info_icon " />
+              <h1>alexotoous@gmail.com</h1>
+            </div>
+          </div>
         </section>
       </main>
     </Layout>
