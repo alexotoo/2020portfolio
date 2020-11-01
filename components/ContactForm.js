@@ -31,7 +31,15 @@ export default function ContactForm() {
   };
 
   return (
-    <form name="ContactForm" onSubmit={handleSubmit} className="form">
+    <form
+      method="post"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      name="ContactForm"
+      onSubmit={handleSubmit}
+      className="form"
+    >
+      <input type="hidden" name="form-name" value="contact" />
       <label>Name</label>
       <input
         type="text"
