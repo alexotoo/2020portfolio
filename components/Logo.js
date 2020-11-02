@@ -1,8 +1,14 @@
 import Link from "next/link";
 export default function Logo() {
   return (
-    <a href="/">
-      <img src="images/logoAlexooO.svg" alt="logo" className="logo" />
-    </a>
+    // <a href="/">
+    //   <img src="images/logoAlexooO.svg" alt="logo" className="logo" />
+
+    // </a>
+    <Link href="/">
+      <a>
+        <img src="images/logoAlexooO.svg" alt="logo" className="logo" />
+      </a>
+    </Link>
   );
 }
