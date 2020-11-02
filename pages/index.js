@@ -37,8 +37,9 @@ export default function Home() {
                 development skills to bring about business solutions on the web
                 in an amazing manner!.
                 <br /> <br /> Currently, I am available for a suitable web
-                development position with opportunity for continuous learning.
+                development position with opportunities for continuous learning.
               </p>
+
               <Button>Contact me</Button>
             </div>
             <div className="about-content__img">
@@ -174,7 +175,10 @@ export default function Home() {
                     <img src="/images/project1.png" alt="" className="image" />
                   </a>
                   <Button>
-                    <a href="" className="projects__codelinks">
+                    <a
+                      href="https://github.com/alexotoo/tailwindproj"
+                      className="projects__codelinks"
+                    >
                       Visit Code
                     </a>
                   </Button>
@@ -184,7 +188,10 @@ export default function Home() {
                     <img src="/images/project2.png" alt="" className="image" />
                   </a>
                   <Button>
-                    <a href="" className="projects__codelinks">
+                    <a
+                      href="https://github.com/alexotoo/job-agencey"
+                      className="projects__codelinks"
+                    >
                       Visit Code
                     </a>
                   </Button>
@@ -194,7 +201,10 @@ export default function Home() {
                     <img src="/images/project3.png" alt="" className="image" />
                   </a>
                   <Button>
-                    <a href="" className="projects__codelinks">
+                    <a
+                      href="https://github.com/alexotoo/burgermeal/tree/main/Burger-Palce"
+                      className="projects__codelinks"
+                    >
                       Visit Code
                     </a>
                   </Button>
@@ -204,7 +214,10 @@ export default function Home() {
                     <img src="/images/project4.png" alt="" className="image" />
                   </a>
                   <Button>
-                    <a href="" className="projects__codelinks">
+                    <a
+                      href="https://github.com/alexotoo/xtrefit"
+                      className="projects__codelinks"
+                    >
                       Visit Code
                     </a>
                   </Button>
@@ -214,7 +227,10 @@ export default function Home() {
                     <img src="/images/project5.png" alt="" className="image" />
                   </a>
                   <Button>
-                    <a href="" className="projects__codelinks">
+                    <a
+                      href="https://github.com/alexotoo/Scooter-and-Bikes"
+                      className="projects__codelinks"
+                    >
                       Visit Code
                     </a>
                   </Button>
@@ -224,7 +240,10 @@ export default function Home() {
                     <img src="/images/project6.png" alt="" className="image" />
                   </a>
                   <Button>
-                    <a href="" className="projects__codelinks">
+                    <a
+                      href="https://github.com/alexotoo/cakelove/tree/main/assets"
+                      className="projects__codelinks"
+                    >
                       Visit Code
                     </a>
                   </Button>
@@ -237,7 +256,10 @@ export default function Home() {
                     <img src="/images/project7.png" alt="" className="image" />
                   </a>
                   <Button>
-                    <a href="" className="projects__codelinks">
+                    <a
+                      href="https://github.com/alexotoo/react-budget-app"
+                      className="projects__codelinks"
+                    >
                       Visit Code
                     </a>
                   </Button>
@@ -249,28 +271,7 @@ export default function Home() {
         </section>
         <section className="contact">
           <ContactForm />
-          {/* <form
-            className="form"
-            action="/pages/submited"
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-          >
-            <input type="hidden" name="form-name" value="contact" />
-            <input type="hidden" name="contact_number" />
-            <label>Name</label>
-            <input type="text" name="user_name" placeholder="your name" />
-            <label>Email</label>
-            <input
-              type="email"
-              name="user_email"
-              placeholder="example@mail.com"
-            />
-            <label>Message</label>
-            <textarea name="message" />
-            <input className="submit" type="submit" value="Send" />
-          </form> */}
+
           <div className="contact__contacts">
             <div className="contact__contacts-info">
               <FaMobileAlt className="info_icon " />
