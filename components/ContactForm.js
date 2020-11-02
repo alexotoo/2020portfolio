@@ -14,7 +14,7 @@ export default function ContactForm() {
 
   const handleSubmit = (e) => {
     const contactMessage = { name, email, message };
-    console.log(contactMessage);
+
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },

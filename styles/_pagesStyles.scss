@@ -47,29 +47,43 @@ main {
   padding: 0 4rem 0 4rem;
 }
 .hero {
-  position: relative;
+  height: 70vh;
+  font-size: 2rem;
   display: flex;
   flex-direction: column;
-}
-.heroImage {
-  position: relative;
-  z-index: 1;
-  height: 80vh;
-  filter: brightness(60%);
-}
+  justify-content: center;
 
-.hero_text-box {
-  height: 1px;
-  width: 70%;
-  position: absolute;
-  top: 12rem;
-  z-index: 5;
-  text-align: center;
-  letter-spacing: 1.5px;
-  font-size: 1.5rem;
-  background: inherit;
-  align-self: center;
+  align-items: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 4, 255, 0.082),
+      rgba(26, 25, 26, 0.534)
+    ),
+    url("/images/profilbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+// .heroImage {
+//   position: relative;
+//   z-index: 1;
+//   height: 80vh;
+//   filter: brightness(60%);
+// }
+
+// .hero_text-box {
+//   border: 1px solid red;
+//   height: 20px;
+//   width: 70%;
+//   position: absolute;
+//   //top: 12rem;
+//   z-index: 5;
+//   text-align: center;
+//   letter-spacing: 1.5px;
+//   font-size: 1.5rem;
+//   background: inherit;
+//   align-self: center;
+// }
 
 .hero_text {
   position: relative;
@@ -213,7 +227,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    //color: $colorBasic;
     font-size: 1.5rem;
     &-info {
       display: flex;
@@ -228,7 +241,6 @@ main {
       }
       h1:hover {
         border-radius: 50px;
-        // background-color: $colorWhite;
       }
     }
   }
@@ -242,21 +254,20 @@ main {
     z-index: 0;
   }
 
-  .hero_text-box {
-    font-size: 3rem;
+  .hero {
+    height: (100vh-10vh);
+    font-size: 2.5rem;
   }
   .hero_text-greet {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   .about-content {
     display: flex;
   }
-
   .about-content__img {
     width: 50%;
   }
   .aboutImage {
-    height: 120%;
     margin-top: -8rem;
   }
   .about-content__text {

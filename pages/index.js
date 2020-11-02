@@ -9,16 +9,15 @@ export default function Home() {
   return (
     <Layout>
       <header className="hero">
-        <img
+        {/* <img
           src="/images/profilbg.jpg"
           alt="hero image"
           className="heroImage image"
-        />
-        <div className="hero_text-box">
-          <h2 className="hero_text-greet">Hello!</h2>
-          <h2 className="hero_text">I'm Alex Otoo</h2>
-          <h1 className="hero_text">a web developer</h1>
-        </div>
+        /> */}
+
+        <h2 className="hero_text-greet">Hello!</h2>
+        <h2 className="hero_text">I'm Alex Otoo</h2>
+        <h1 className="hero_text">a web developer</h1>
       </header>
       <main>
         {/* about section  */}
