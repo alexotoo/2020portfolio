@@ -9,12 +9,6 @@ export default function Home() {
   return (
     <Layout>
       <header className="hero">
-        {/* <img
-          src="/images/profilbg.jpg"
-          alt="hero image"
-          className="heroImage image"
-        /> */}
-
         <h2 className="hero_text-greet">Hello!</h2>
         <h2 className="hero_text">I'm Alex Otoo</h2>
         <h1 className="hero_text">a web developer</h1>
