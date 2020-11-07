@@ -2,8 +2,12 @@
 
 p {
   color: var(--textdark-color);
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 100;
+}
+a {
+  text-decoration: none;
+  color: var(--textdark-color);
 }
 .pb1 {
   padding-bottom: 2rem;
@@ -261,4 +265,22 @@ main {
   .contact__contacts {
     padding: 4rem 2rem 0 0;
   }
+}
+
+////blog page css ///
+.pages-pt {
+  padding-top: 60px;
+  min-height: 70vh;
+}
+
+.blog-page {
+}
+
+////contact page css ///
+.contact-page {
+  background-color: var(--whitedeep-color);
+}
+.contact-page__intro {
+  text-align: center;
+  padding: 3rem;
 }

@@ -12,12 +12,16 @@ export default function Menu({ isClosed }) {
           </Link>
         </li>
         <li className="nav__item">
-          <Link href="/">
-            <a className="nav__link">Blog</a>
-          </Link>
+          <a
+            href="https://dev.to/alexooo"
+            className="nav__link"
+            target="_blank"
+          >
+            Blog
+          </a>
         </li>
         <li className="nav__item">
-          <Link href="/">
+          <Link href="/contact">
             <a className="nav__link">Contact</a>
           </Link>
         </li>

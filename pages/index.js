@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Button from "../components/Button";
 import Layout from "../components/Layout";
 import "../styles/styles.scss";
@@ -22,18 +23,23 @@ export default function Home() {
           <div className="about-content">
             <div className="about-content__text">
               <p className="">
-                I build high quality, fast and tailor-made solution driven
-                websites.
+                I am Alex Otoo. I am a web developer who enjoys building
+                engaging websites.
                 <br />
-                <br /> I am a web developer currently focused on front-end
-                development based in Toronto. My motivation is to use my web
-                development skills to bring about business solutions on the web
-                in an amazing manner!.
-                <br /> <br /> Currently, I am available for a suitable web
-                development position with opportunities for continuous learning.
+                <br /> I am currently focused on front-end and I'm based in
+                Toronto. My motivation is to use my web development skills to
+                develop results driven websites which offers maximum business
+                solution potentials and sustained clients satisfaction.
+                <br /> <br /> Currently, I am available for freelancing or a
+                suitable web development position with opportunities for
+                continuous learning.
               </p>
 
-              <Button>Contact me</Button>
+              <Button>
+                <Link href="/contact">
+                  <a>Contact Me</a>
+                </Link>
+              </Button>
             </div>
             <div className="about-content__img">
               <img
@@ -272,7 +278,7 @@ export default function Home() {
             </div>
             <div className="contact__contacts-info">
               <FaEnvelope className="info_icon " />
-              <h1>alexotoous@gmail.com</h1>
+              <h1>alexotoous@outlook.com</h1>
             </div>
           </div>
         </section>

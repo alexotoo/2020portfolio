@@ -4,6 +4,7 @@ import { FaBars } from "react-icons/fa";
 import Link from "next/link";
 import Logo from "./Logo";
 import Menu from "./Menu";
+import Overlay from "./Overlay";
 
 export default function Header() {
   const [isClosed, setIsClosed] = useState(true);
@@ -11,28 +12,35 @@ export default function Header() {
     setIsClosed(!isClosed);
   };
   return (
-    <div className="header">
-      <FaBars onClick={sideNavHandler} className="menutoggler" />
-      <Logo />
-      <img src="/images/dp.jpg" alt="" className="dpImage" />
-      <Menu isClosed={isClosed} />
-      <ul className="nav__list nonedisplay">
-        <li className="nav__item">
-          <Link href="/">
-            <a className="nav__link">Home</a>
-          </Link>
-        </li>
-        <li className="nav__item">
-          <Link href="/">
-            <a className="nav__link">Blog</a>
-          </Link>
-        </li>
-        <li className="nav__item">
-          <Link href="/">
-            <a className="nav__link">Contact</a>
-          </Link>
-        </li>
-      </ul>
-    </div>
+    <>
+      <Overlay isClosed={isClosed} sideNavHandler={sideNavHandler} />
+      <div className="header">
+        <FaBars onClick={sideNavHandler} className="menutoggler" />
+        <Logo />
+        <img src="/images/dp.jpg" alt="" className="dpImage" />
+        <Menu isClosed={isClosed} />
+        <ul className="nav__list nonedisplay">
+          <li className="nav__item">
+            <Link href="/">
+              <a className="nav__link">Home</a>
+            </Link>
+          </li>
+          <li className="nav__item">
+            <a
+              href="https://dev.to/alexooo"
+              className="nav__link"
+              target="_blank"
+            >
+              Blog
+            </a>
+          </li>
+          <li className="nav__item">
+            <Link href="/contact">
+              <a className="nav__link">Contact</a>
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </>
   );
 }

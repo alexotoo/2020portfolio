@@ -1,7 +1,5 @@
 //this file styles all the components on this website
 
-//COMPONENTS
-
 //1.Layout
 
 //2.Header
@@ -16,19 +14,23 @@
   font-weight: 300;
   justify-content: space-around;
   position: fixed;
-  z-index: 999;
+  z-index: 250;
 }
 .nav {
   background-color: var(--whitedeep-color);
   position: fixed;
-  top: 10vh;
+  top: 0;
   height: 100%;
   width: 280px;
   transition: ease-out 250ms;
   left: 0;
-  z-index: 20;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   &__list {
+    position: relative;
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -53,21 +55,20 @@
 .nonedisplay {
   display: none;
 }
+
 .menutoggler {
   font-size: 25px;
   color: var(--textdark-color);
   cursor: pointer;
 }
 .isClosed {
-  //left: -300px;
-  transform: translateX(-450px);
+  transform: translateX(-750px);
   transition: ease 300ms;
 }
 .dpImage {
   border-radius: 50%;
   width: 60px;
   height: 50px;
-  //margin-left: 40%;
 }
 .logo {
   height: 40px;
@@ -248,6 +249,9 @@ footer a:last-of-type:hover {
     justify-content: space-between;
     padding: 0 3rem 0 2rem;
   }
+  .overlay {
+    display: none;
+  }
   .menutoggler,
   .dpImage {
     display: none;
@@ -264,31 +268,15 @@ footer a:last-of-type:hover {
   .nav {
     display: none;
   }
-
-  // .home_main {
-  //   display: flex;
-  // }
-  // .home1 {
-  //   width: 40%;
-  //   padding-top: 2rem;
-  // }
-  // .contact {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   justify-content: center;
-  //   align-items: center;
-  // }
 }
-// @media (min-width: 1024px) {
-//   .home_main {
-//     margin-top: -2rem;
-//   }
-//   .project {
-//     &_inner_container {
-//       display: grid;
-//       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-//       gap: 1.25rem;
-//       column-gap: 2rem;
-//     }
-//   }
-// }
+
+//overlay
+.overlay {
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 120;
+  background-color: transparent;
+}
