@@ -14,7 +14,8 @@ export default function Footer() {
           <FaTwitterSquare className="twitter" />
         </a>
       </div>
-      <h1> alexooO &#169;2020</h1>
+      <h1> alexotoo &#169;2020</h1>
+      <h4>Created with Next Js and Deployed on Netlify</h4>
     </footer>
   );
 }
