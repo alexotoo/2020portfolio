@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
-
+import Head from "next/head";
 import Link from "next/link";
 import Logo from "./Logo";
 import Menu from "./Menu";
@@ -13,6 +13,13 @@ export default function Header() {
   };
   return (
     <>
+      <Head>
+        <meta
+          name="portfolio"
+          content="portfolio, freelance, javascript, web developer"
+        />
+        <title>Portfolio page</title>
+      </Head>
       <Overlay isClosed={isClosed} sideNavHandler={sideNavHandler} />
       <div className="header">
         <FaBars onClick={sideNavHandler} className="menutoggler" />

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Button from "./Button";
 
 const encode = (data) => {
   return Object.keys(data)
@@ -66,36 +65,6 @@ export default function ContactForm() {
       />
 
       <input className="submit" type="submit" />
-      {/* <label>
-        Your Name:{" "}
-        <input
-          type="text"
-          name="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-      </label>
-
-      <label>
-        Your Email:{" "}
-        <input
-          type="email"
-          name="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-      </label>
-
-      <label>
-        Message:{" "}
-        <textarea
-          name="message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        />
-      </label>
-
-      <button type="submit">Send</button> */}
     </form>
   );
 }
