@@ -22,7 +22,7 @@ export default function Home() {
           </h1>
           <div className="about-content">
             <div className="about-content__text">
-              <p className="">
+              <p>
                 I am Alex Otoo. I am a web developer who enjoys building
                 engaging websites.
                 <br />
