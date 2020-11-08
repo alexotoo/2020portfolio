@@ -16,7 +16,6 @@ export default function contact() {
           as possible.
         </p>
         <section className="contact">
-          <ContactForm />
           <div className="contact__contacts">
             <div className="contact__contacts-info">
               <FaMobileAlt className="info_icon " />
@@ -27,6 +26,7 @@ export default function contact() {
               <h1>alexotoous@outlook.com</h1>
             </div>
           </div>
+          <ContactForm />
         </section>
       </main>
     </Layout>

@@ -269,8 +269,6 @@ export default function Home() {
           <hr className="mt1" />
         </section>
         <section className="contact">
-          <ContactForm />
-
           <div className="contact__contacts">
             <div className="contact__contacts-info">
               <FaMobileAlt className="info_icon " />
@@ -281,6 +279,7 @@ export default function Home() {
               <h1>alexotoous@outlook.com</h1>
             </div>
           </div>
+          <ContactForm />
         </section>
       </main>
     </Layout>
