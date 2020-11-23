@@ -64,7 +64,7 @@ export default function ContactForm() {
         onChange={(e) => setMessage(e.target.value)}
       />
 
-      <input className="submit" type="submit" />
+      <input className="submit" type="submit" name="submit" />
     </form>
   );
 }

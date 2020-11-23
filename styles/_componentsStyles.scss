@@ -170,7 +170,7 @@
 .form input[type="submit"] {
   font-weight: bolder;
   margin: 20px auto;
-  width: 100px;
+  width: 150px;
   cursor: pointer;
 }
 .form > *:focus {
@@ -188,13 +188,6 @@
   color: var(--white-color);
   font-size: 3.5rem;
 }
-
-// @media (min-width: 1024px) {
-//   .form {
-//     width: 60%;
-
-//   }
-// }
 
 //5.Footer
 footer {
