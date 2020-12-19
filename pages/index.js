@@ -26,10 +26,10 @@ export default function Home() {
                 I am Alex Otoo. I am a web developer who enjoys building
                 engaging websites.
                 <br />
-                <br /> I am currently focused on front-end and I'm based in
-                Toronto. My motivation is to use my web development skills to
-                develop results driven websites which offers maximum business
-                solution potentials and sustained clients satisfaction.
+                <br /> I am currently focused on front-end, my motivation is to
+                use my web development skills to develop results driven websites
+                which offers maximum business solution potentials and sustained
+                clients satisfaction.
                 <br /> <br /> Currently, I am available for freelancing or a
                 suitable web development position with opportunities for
                 continuous learning.
