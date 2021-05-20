@@ -9,6 +9,13 @@ import ContactForm from "../components/ContactForm";
 export default function Home() {
   return (
     <Layout>
+      <Head>
+        <title>ALex Otoo Portfolio</title>
+        <meta
+          name="description"
+          content="web developer, react js, portfolio, front end developer, next js developer,jamstack,web development"
+        />
+      </Head>
       <header className="hero">
         <h2 className="hero_text-greet">Hello!</h2>
         <h2 className="hero_text">I'm Alex Otoo</h2>
