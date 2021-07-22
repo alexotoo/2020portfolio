@@ -216,7 +216,7 @@ export default function Home() {
                   </Button>
                 </article>
                 <article className="projects__project-card">
-                  <a href="https://xtremfit.netlify.app/" target="_blank">
+                  <a href="https://xtremgym.netlify.app/" target="_blank">
                     <img src="/images/project4.png" alt="" className="image" />
                   </a>
                   <Button>
