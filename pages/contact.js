@@ -1,11 +1,14 @@
 import ContactForm from "../components/ContactForm";
 import Layout from "../components/Layout";
-import "../styles/styles.scss";
+
 import { FaMobileAlt, FaEnvelope } from "react-icons/fa";
+import NavMobile from "../components/NavMobile";
+import { useState } from "react";
 
 export default function contact() {
   return (
     <Layout>
+      <NavMobile />
       <main className="pages-pt contact-page">
         <p className="contact-page__intro">
           Welcome.

@@ -1,15 +1,13 @@
-import { useState } from "react";
-import { FaBars } from "react-icons/fa";
 import Head from "next/head";
 import Link from "next/link";
 import Logo from "./Logo";
-import Menu from "./Menu";
-import Overlay from "./Overlay";
+import styles from "./header.module.scss";
+import { useRouter } from "next/router";
 
 export default function Header() {
-  const [isClosed, setIsClosed] = useState(true);
-  const sideNavHandler = () => {
-    setIsClosed(!isClosed);
+  const router = useRouter();
+  const activeNav = {
+    active: "active",
   };
   return (
     <>
@@ -20,32 +18,48 @@ export default function Header() {
         />
         <title>Portfolio page</title>
       </Head>
-      <Overlay isClosed={isClosed} sideNavHandler={sideNavHandler} />
-      <div className="header">
-        <FaBars onClick={sideNavHandler} className="menutoggler" />
+
+      <div className={styles.navbar}>
         <Logo />
-        <img src="/images/dp.jpg" alt="" className="dpImage" />
-        <Menu isClosed={isClosed} />
-        <ul className="nav__list nonedisplay">
-          <li className="nav__item">
-            <Link href="/">
-              <a className="nav__link">Home</a>
-            </Link>
-          </li>
-          <li className="nav__item">
-            <a
-              href="https://dev.to/alexooo"
-              className="nav__link"
-              target="_blank"
-            >
-              Blog
-            </a>
-          </li>
-          <li className="nav__item">
-            <Link href="/contact">
-              <a className="nav__link">Contact</a>
-            </Link>
-          </li>
+        <ul className={styles.navList}>
+          <Link href="/">
+            <li className={styles.navItem}>
+              <a className={router.pathname == "/" ? "active" : "nav__link"}>
+                Home
+              </a>
+            </li>
+          </Link>
+          <Link href="/about">
+            <li className={styles.navItem}>
+              <a
+                className={router.pathname == "/about" ? "active" : "nav__link"}
+              >
+                About
+              </a>
+            </li>
+          </Link>
+          <Link href="/projects">
+            <li className={styles.navItem}>
+              <a
+                className={
+                  router.pathname == "/projects" ? "active" : "nav__link"
+                }
+              >
+                Projects
+              </a>
+            </li>
+          </Link>
+          <Link href="/contact">
+            <li className={styles.navItem}>
+              <a
+                className={
+                  router.pathname == "/contact" ? "active" : "nav__link"
+                }
+              >
+                Contact
+              </a>
+            </li>
+          </Link>
         </ul>
       </div>
     </>

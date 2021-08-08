@@ -1,22 +1,32 @@
 import Head from "next/head";
 import Link from "next/link";
-import Button from "../components/Button";
 import Layout from "../components/Layout";
-import "../styles/styles.scss";
 import { FaMobileAlt, FaEnvelope } from "react-icons/fa";
 import ContactForm from "../components/ContactForm";
+import { Button as Btn } from "../components/UtillsAndLayoutComponents";
+import NavMobile from "../components/NavMobile";
+import styles from "../components/homePage.module.scss";
+import ProjectsSection from "../components/ProjectsSection";
 
 export default function Home() {
   return (
     <Layout>
-      <header className="hero">
-        <h2 className="hero_text-greet">Hello!</h2>
-        <h2 className="hero_text">I'm Alex Otoo</h2>
-        <h1 className="hero_text">a web developer</h1>
+      <header className={styles.heroBox}>
+        <h2 className="title">Hello, Alex Otoo here.</h2>
+        <h1 className="sub-title">I am a web developer</h1>
+        <p className="text mt">
+          let me help you standout with better, beautiful, professional and
+          improved websites.
+        </p>
+        <Btn nobg="btn_bg mt">
+          <Link href="/contact">
+            <a>lets start</a>
+          </Link>
+        </Btn>
       </header>
       <main>
         {/* about section  */}
-        <section className="about">
+        {/* <section className="about">
           <h1 className="title">
             About <span className="blue">Me</span>
           </h1>
@@ -34,12 +44,11 @@ export default function Home() {
                 suitable web development position with opportunities for
                 continuous learning.
               </p>
-
-              <Button>
+              <Btn nobg="btn_bg">
                 <Link href="/contact">
                   <a>Contact Me</a>
                 </Link>
-              </Button>
+              </Btn>
             </div>
             <div className="about-content__img">
               <img
@@ -50,17 +59,164 @@ export default function Home() {
             </div>
           </div>
           <hr />
-        </section>
-        <section className="projects">
-          <h1 className="title">
-            My <span className="blue">Projects</span>
+        </section> */}
+        <ProjectsSection />
+        <div className="mt1"></div>
+        <section className="projects mt">
+          <div className="mt1"></div>
+          <h1 className="title pb1">
+            More <span className="blue">Projects</span>
           </h1>
-          <p className=" pb1">
+
+          {/* <p className=" pb1">
             Welcome to my Projects. Below are my skills set and fun projects I
             have made. Enjoy!
-          </p>
+          </p> */}
           <div className="project-showcase">
-            <div className="projects__skills">
+            {/* projects */}
+            <div className="projects__skills mt ">
+              <div className="projects__projectwrapper">
+                <article className="projects__project-card">
+                  <img src="/images/project1.png" alt="" className="image" />
+
+                  <div className="visitBtn">
+                    <a
+                      href="https://github.com/alexotoo/tailwindproj"
+                      className="projects__codelinks"
+                    >
+                      Visit Code
+                    </a>
+
+                    <a
+                      href="https://tailwindproj.netlify.app/"
+                      target="_blank"
+                      className="projects__codelinks"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
+                </article>
+                <article className="projects__project-card">
+                  <img src="/images/project2.png" alt="" className="image" />
+                  <div className="visitBtn">
+                    <a
+                      href="https://github.com/alexotoo/job-agencey"
+                      className="projects__codelinks"
+                    >
+                      Visit Code
+                    </a>
+
+                    <a
+                      href="https://alexooo-agency.netlify.app/"
+                      target="_blank"
+                      className="projects__codelinks"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
+                </article>
+                <article className="projects__project-card">
+                  <img src="/images/project3.png" alt="" className="image" />
+                  <div className="visitBtn">
+                    <a
+                      href="https://github.com/alexotoo/burgermeal/tree/main/Burger-Palce"
+                      className="projects__codelinks"
+                    >
+                      Visit Code
+                    </a>
+
+                    <a
+                      href="https://burgerpalace.netlify.app/"
+                      target="_blank"
+                      className="projects__codelinks"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
+                </article>
+                <article className="projects__project-card">
+                  <img src="/images/project4.png" alt="" className="image" />
+                  <div className="visitBtn">
+                    <a
+                      href="https://github.com/alexotoo/xtrefit"
+                      className="projects__codelinks"
+                    >
+                      Visit Code
+                    </a>
+
+                    <a
+                      href="https://xtremgym.netlify.app/"
+                      target="_blank"
+                      className="projects__codelinks"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
+                </article>
+                <article className="projects__project-card">
+                  <img src="/images/project5.png" alt="" className="image" />
+
+                  <div className="visitBtn">
+                    <a
+                      href="https://github.com/alexotoo/Scooter-and-Bikes"
+                      className="projects__codelinks"
+                    >
+                      Visit Code
+                    </a>
+
+                    <a
+                      href="https://scooter-bikes.netlify.app/"
+                      target="_blank"
+                      className="projects__codelinks"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
+                </article>
+                {/* <article className="projects__project-card">
+                  <a>
+                    <img src="/images/project6.png" alt="" className="image" />
+                  </a>
+                  <div className="visitBtn">
+                    <a
+                      href="https://github.com/alexotoo/cakelove/tree/main/assets"
+                      className="projects__codelinks"
+                    >
+                      Visit Code
+                    </a>
+
+                    <a
+                      href="https://alexooo-cakes.netlify.app/"
+                      target="_blank"
+                      className="projects__codelinks"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
+                </article> */}
+                <article className="projects__project-card">
+                  <img src="/images/project7.png" alt="" className="image" />
+
+                  <div className="visitBtn">
+                    <a
+                      href="https://github.com/alexotoo/react-budget-app"
+                      className="projects__codelinks"
+                    >
+                      Visit Code
+                    </a>
+
+                    <a
+                      href="https://reactjs-budget-app.netlify.app/"
+                      target="_blank"
+                      className="projects__codelinks"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
+                </article>
+              </div>
+            </div>
+            {/* <div className="projects__skills">
               <p className="textshadow">skills</p>
               <div className="projects__skillswrapper">
                 <article className="projects__card">
@@ -160,111 +316,7 @@ export default function Home() {
                   <p className="projects__skilliconname">Git</p>
                 </article>
               </div>
-            </div>
-            {/* projects */}
-            <div className="projects__skills mt ">
-              <p className="textshadow">Projects</p>
-              <p className="pb1">
-                click image to visit website or the button below it to view
-                code.
-              </p>
-              <div className="projects__projectwrapper">
-                <article className="projects__project-card">
-                  <a href="https://tailwindproj.netlify.app/" target="_blank">
-                    <img src="/images/project1.png" alt="" className="image" />
-                  </a>
-                  <Button>
-                    <a
-                      href="https://github.com/alexotoo/tailwindproj"
-                      className="projects__codelinks"
-                    >
-                      Visit Code
-                    </a>
-                  </Button>
-                </article>
-                <article className="projects__project-card">
-                  <a href="https://alexooo-agency.netlify.app/" target="_blank">
-                    <img src="/images/project2.png" alt="" className="image" />
-                  </a>
-                  <Button>
-                    <a
-                      href="https://github.com/alexotoo/job-agencey"
-                      className="projects__codelinks"
-                    >
-                      Visit Code
-                    </a>
-                  </Button>
-                </article>
-                <article className="projects__project-card">
-                  <a href="https://burgerpalace.netlify.app/" target="_blank">
-                    <img src="/images/project3.png" alt="" className="image" />
-                  </a>
-                  <Button>
-                    <a
-                      href="https://github.com/alexotoo/burgermeal/tree/main/Burger-Palce"
-                      className="projects__codelinks"
-                    >
-                      Visit Code
-                    </a>
-                  </Button>
-                </article>
-                <article className="projects__project-card">
-                  <a href="https://xtremfit.netlify.app/" target="_blank">
-                    <img src="/images/project4.png" alt="" className="image" />
-                  </a>
-                  <Button>
-                    <a
-                      href="https://github.com/alexotoo/xtrefit"
-                      className="projects__codelinks"
-                    >
-                      Visit Code
-                    </a>
-                  </Button>
-                </article>
-                <article className="projects__project-card">
-                  <a href="https://scooter-bikes.netlify.app/" target="_blank">
-                    <img src="/images/project5.png" alt="" className="image" />
-                  </a>
-                  <Button>
-                    <a
-                      href="https://github.com/alexotoo/Scooter-and-Bikes"
-                      className="projects__codelinks"
-                    >
-                      Visit Code
-                    </a>
-                  </Button>
-                </article>
-                <article className="projects__project-card">
-                  <a href="https://alexooo-cakes.netlify.app/" target="_blank">
-                    <img src="/images/project6.png" alt="" className="image" />
-                  </a>
-                  <Button>
-                    <a
-                      href="https://github.com/alexotoo/cakelove/tree/main/assets"
-                      className="projects__codelinks"
-                    >
-                      Visit Code
-                    </a>
-                  </Button>
-                </article>
-                <article className="projects__project-card">
-                  <a
-                    href="https://reactjs-budget-app.netlify.app/"
-                    target="_blank"
-                  >
-                    <img src="/images/project7.png" alt="" className="image" />
-                  </a>
-                  <Button>
-                    <a
-                      href="https://github.com/alexotoo/react-budget-app"
-                      className="projects__codelinks"
-                    >
-                      Visit Code
-                    </a>
-                  </Button>
-                </article>
-              </div>
-            </div>
+            </div> */}
           </div>
           <hr className="mt1" />
         </section>
@@ -281,6 +333,7 @@ export default function Home() {
           </div>
           <ContactForm />
         </section>
+        <NavMobile />
       </main>
     </Layout>
   );
