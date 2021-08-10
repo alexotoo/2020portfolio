@@ -6,9 +6,7 @@ import { useRouter } from "next/router";
 
 export default function Header() {
   const router = useRouter();
-  const activeNav = {
-    active: "active",
-  };
+
   return (
     <>
       <Head>

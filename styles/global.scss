@@ -15,8 +15,8 @@
   --body-deepprimary: #161625;
   --gradient-primary: linear-gradient(
     228deg,
-    rgb(204, 2, 113) 20%,
-    rgba(106, 22, 162, 1) 64%
+    rgba(204, 2, 113, 0.753) 20%,
+    rgba(106, 22, 162, 0.774) 64%
   );
   --font-primary: "Oswald", sans-serif;
   --font-secondary: "Montserrat", sans-serif;
@@ -64,14 +64,6 @@ ul {
 }
 
 //buttons
-.btn_nobg {
-  background: transparent;
-  border: 1px solid var(--graylight-color);
-}
-.btn_bg {
-  background: var(--gradient-primary);
-  border: none;
-}
 
 //testing
 //utils for all pages
@@ -88,7 +80,12 @@ a {
 .pb1 {
   padding-bottom: 2rem;
 }
-
+.mb {
+  margin-bottom: 1rem;
+}
+.mb1 {
+  margin-bottom: 3rem;
+}
 .mt {
   margin-top: 3rem;
 }
@@ -145,8 +142,40 @@ main {
 }
 
 //about section
+.about {
+  min-height: 80vh;
+  margin-top: 8rem;
+
+  &-heading {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    height: 300px;
+    background: var(--body-primary);
+    border-radius: 20px;
+
+    &__img {
+      .aboutImage {
+        height: 100%;
+      }
+    }
+    &__text {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+    }
+  }
+  &-content {
+    text-align: center;
+    padding: 4rem 0 4rem 0;
+  }
+}
 .about-content__img {
   padding-top: 2rem;
+  width: 40%;
 }
 
 .aboutImage {
@@ -174,14 +203,14 @@ main {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  min-height: 100vh;
+  min-height: 70vh;
   margin-top: -30px;
 
   &__skillswrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 1rem;
-    row-gap: 2rem;
+    row-gap: 4rem;
   }
   &__skills {
     border-radius: 20px;
@@ -193,15 +222,15 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   &__skillicon {
-    width: 100%;
-    border-radius: 10px;
-    opacity: 1;
+    width: 50%;
+    border-radius: 50px;
     transition: ease 500ms;
   }
   &__skilliconname {
-    color: var(--textdark-color);
+    color: var(--white-color);
   }
   &__project-card {
     border-radius: 20px;
@@ -236,6 +265,9 @@ main {
     margin-top: 1rem;
   }
 }
+.skillSet {
+  min-height: 35vh;
+}
 .visitBtn {
   display: flex;
   justify-content: space-around;
@@ -243,7 +275,7 @@ main {
 
 //contact
 .contact {
-  background-color: var(--bluedeep-color);
+  background-color: var(--body-primary);
   min-height: 70vh;
   margin: 0 -4rem 0 -4rem;
   padding-top: 3rem;
@@ -285,20 +317,20 @@ main {
   .hero_text-greet {
     font-size: 5rem;
   }
-  .about-content {
-    display: flex;
-  }
-  .about-content__img {
-    width: 50%;
-  }
-  .aboutImage {
-    margin-top: -8rem;
-  }
-  .about-content__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+  // .about-content {
+  //   display: flex;
+  // }
+  // .about-content__img {
+  //   width: 50%;
+  // }
+  // .aboutImage {
+  //   margin-top: -8rem;
+  // }
+  // .about-content__text {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-between;
+  // }
   .contact {
     display: flex;
   }
@@ -333,6 +365,9 @@ main {
       padding: 6rem;
     }
   }
+  .skillSet {
+    padding: 0 6rem 0 6rem;
+  }
 }
 
 ////blog page css ///
@@ -358,6 +393,7 @@ main {
   text-decoration: none;
   font-size: 1.5rem;
   transition: all 300ms ease;
+  cursor: pointer;
 }
 .nav {
   &__list {
@@ -388,63 +424,6 @@ main {
 .logo {
   height: 70px;
   width: 180px;
-}
-
-//3. button
-.button {
-  text-align: center;
-  text-transform: capitalize;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 1.5rem;
-  letter-spacing: 2px;
-  position: relative;
-  background-color: var(--white-color);
-  border: none;
-  color: var(--white-color);
-  padding: 10px;
-  width: 160px;
-  text-align: center;
-  transition-duration: 0.5s;
-  overflow: hidden;
-  border-radius: 4px;
-  margin-top: 2rem;
-}
-
-.button:hover {
-  background: var(--textdark-color);
-  box-shadow: 0.5rem 0.5rem 1rem var(--graylight-color);
-  color: var(--bluelight-color);
-}
-.button:hover a {
-  color: var(--bluelight-color);
-}
-
-.button:after {
-  content: "";
-  background: #00b4d8;
-  display: block;
-  position: absolute;
-  padding-top: 300%;
-  padding-left: 350%;
-  margin-left: -20px !important;
-  margin-top: -120%;
-  opacity: 0;
-  transition: all 0.8s;
-}
-
-.button:hover:after {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: 0s;
-}
-.button:active {
-  color: #0c1951;
-}
-
-.button:focus {
-  outline: 0;
 }
 
 //4.Form
@@ -487,13 +466,20 @@ main {
   margin: 20px auto;
   width: 150px;
   cursor: pointer;
+  background: transparent;
+  color: var(--white-color);
+  border: 1px solid var(--graylight-color);
+  transition: ease 500ms;
 }
 .form > *:focus {
   width: 100%;
   background-color: var(--whitedeep-color);
 }
 .form input[type="submit"]:hover {
-  background-color: var(--whitedeep-color);
+  background: var(--gradient-primary);
+  border: none;
+  transform: scaleX(1.1);
+  background-position: 180px;
 }
 .form input[type="submit"]:active {
   transform: translateY(2px);
@@ -510,11 +496,11 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background: var(--textdark-color);
+  background: var(--body-deepprimary);
   color: var(--graylight-color);
   padding: 3rem 4rem 1rem 4rem;
   min-height: 15vh;
-  padding-bottom: 3rem;
+  padding-bottom: 10rem;
 }
 footer h1 {
   border-top: 1px var(--bluelight-color) solid;
@@ -523,32 +509,32 @@ footer h1 {
 footer a {
   color: var(--graylight-color);
   font-size: 7rem;
-  transition: all ease-out 300ms;
+  transition: ease-out 300ms;
 }
 footer .footer__social {
   width: 70%;
   display: flex;
   justify-content: space-evenly;
 }
-footer a:first-of-type {
+footer .icon-gt:first-of-type {
   color: var(--white-color);
 }
-footer a:nth-of-type(2n) {
+footer .icon-dev:nth-of-type(2n) {
   color: var(--graylight-color);
 }
-footer a:last-of-type {
+footer .icon-t:nth-of-type(3n) {
   color: var(--bluedeep-color);
 }
 
-footer a:first-of-type:hover {
+footer .icon-gt:hover {
   color: var(--graylight-color);
   transform: scale(1.15);
 }
-footer a:nth-of-type(2n):hover {
+footer .icon-dev:hover {
   color: #3d3d3d;
   transform: scale(1.15);
 }
-footer a:last-of-type:hover {
+footer .icon-t:hover {
   color: #1da1f2;
   transform: scale(1.15);
 }
@@ -645,7 +631,7 @@ footer a:last-of-type:hover {
 //featured projects section component  starts-----
 .fprojects {
   padding: 2rem;
-  min-height: 100vh;
+  min-height: 70vh;
   text-align: center;
   margin: 0 auto;
   display: flex;
@@ -657,7 +643,7 @@ footer a:last-of-type:hover {
 
 .fprojects .fproject {
   width: 100%;
-  height: 80vh;
+  height: 85vh;
   background: var(--body-primary);
   font-size: 2rem;
   overflow: hidden;
@@ -672,12 +658,31 @@ footer a:last-of-type:hover {
 
 .card {
   width: 100%;
-  height: 100%;
+}
+.card h4 {
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.card div {
+  padding: 0 1rem;
 }
 .card .img {
   width: 100%;
-  height: 50vh;
+  height: 40vh;
 }
+.seeMore {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bolder;
+  transition: all ease 500ms;
+}
+.seeMore:hover {
+  transform: scaleX(1.09);
+}
+
 //projects section component  ends-----
 @media (min-width: 1024px) {
   .fprojects .fproject {
@@ -690,5 +695,8 @@ footer a:last-of-type:hover {
   }
   .sub-title {
     font-size: 5rem;
+  }
+  .card .img {
+    height: 50vh;
   }
 }

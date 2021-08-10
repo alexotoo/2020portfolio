@@ -12,7 +12,19 @@ export default function ContactForm() {
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
+    e.preventDefault();
     const contactMessage = { name, email, message };
+    if (contactMessage.name === "") {
+      alert("please enter name");
+
+      return;
+    } else if (contactMessage.email === "") {
+      alert("please enter email");
+      return;
+    } else if (contactMessage.message === "") {
+      alert("please enter message");
+      return;
+    }
 
     fetch("/", {
       method: "POST",
@@ -24,8 +36,6 @@ export default function ContactForm() {
     })
       .then(() => alert("message sent"))
       .catch((error) => alert(error));
-
-    e.preventDefault();
     setName("");
     setEmail("");
     setMessage("");
@@ -58,6 +68,7 @@ export default function ContactForm() {
         onChange={(e) => setEmail(e.target.value)}
       />
       <label>Message</label>
+      {/* {isAlart && <Alart msg="please enter name" />} */}
       <textarea
         name="message"
         value={message}
