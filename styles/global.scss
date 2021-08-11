@@ -110,13 +110,12 @@ hr {
 }
 
 .title {
-  font-size: 4rem;
-  margin-top: 3rem;
+  font-size: 3rem;
   letter-spacing: 0.25rem;
   text-align: center;
 }
 .sub-title {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   letter-spacing: 0.25rem;
 }
 .blue {
@@ -143,39 +142,39 @@ main {
 
 //about section
 .about {
-  min-height: 80vh;
-  margin-top: 8rem;
-
+  min-height: 70vh;
+  margin: 8rem -2rem 0 -2rem;
   &-heading {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
     height: 300px;
     background: var(--body-primary);
     border-radius: 20px;
+    width: 100%;
 
     &__img {
+      flex: 1;
       .aboutImage {
         height: 100%;
+        object-fit: contain;
       }
     }
     &__text {
+      flex: 1;
       align-self: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-content: center;
       text-align: center;
+      padding-left: 2rem;
     }
   }
   &-content {
     text-align: center;
     padding: 4rem 0 4rem 0;
   }
-}
-.about-content__img {
-  padding-top: 2rem;
-  width: 40%;
 }
 
 .aboutImage {
@@ -214,7 +213,6 @@ main {
   }
   &__skills {
     border-radius: 20px;
-    padding: 15px 15px 25px 15px;
     box-shadow: 12px 16px 12px -9px rgba(0, 0, 0, 0.29);
     text-align: center;
   }
@@ -317,20 +315,7 @@ main {
   .hero_text-greet {
     font-size: 5rem;
   }
-  // .about-content {
-  //   display: flex;
-  // }
-  // .about-content__img {
-  //   width: 50%;
-  // }
-  // .aboutImage {
-  //   margin-top: -8rem;
-  // }
-  // .about-content__text {
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: space-between;
-  // }
+
   .contact {
     display: flex;
   }
@@ -380,8 +365,11 @@ main {
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  min-height: 30vh;
 }
-
+// .contact-page {
+//   min-height: 70vh;
+// }
 //components
 //this file styles all the components on this website
 
@@ -500,7 +488,7 @@ footer {
   color: var(--graylight-color);
   padding: 3rem 4rem 1rem 4rem;
   min-height: 15vh;
-  padding-bottom: 10rem;
+  padding: 4rem 0 10rem 0;
 }
 footer h1 {
   border-top: 1px var(--bluelight-color) solid;
@@ -537,17 +525,6 @@ footer .icon-dev:hover {
 footer .icon-t:hover {
   color: #1da1f2;
   transform: scale(1.15);
-}
-
-//overlay
-.overlay {
-  position: fixed;
-  top: 10vh;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 120;
-  background-color: transparent;
 }
 
 //NavMobile
@@ -626,12 +603,14 @@ footer .icon-t:hover {
   .nav {
     display: none;
   }
+  footer {
+    padding: 4rem 0 4rem 0;
+  }
 }
 
 //featured projects section component  starts-----
 .fprojects {
-  padding: 2rem;
-  min-height: 70vh;
+  min-height: 50vh;
   text-align: center;
   margin: 0 auto;
   display: flex;
@@ -639,6 +618,7 @@ footer .icon-t:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0 -2rem 0 -2rem;
 }
 
 .fprojects .fproject {
@@ -698,5 +678,8 @@ footer .icon-t:hover {
   }
   .card .img {
     height: 50vh;
+  }
+  .fprojects {
+    margin: 0 2rem 0 2rem;
   }
 }

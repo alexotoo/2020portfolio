@@ -10,6 +10,7 @@ export default function contact() {
     <Layout>
       <NavMobile />
       <main className="pages-pt contact-page">
+        <div className="mt1"></div>
         <p className="contact-page__intro">
           Welcome.
           <br />
@@ -18,11 +19,16 @@ export default function contact() {
           In case I miss your call or receive your mail, I will respond as soon
           as possible.
         </p>
+        <div className="mt1"></div>
         <section className="contact">
           <div className="contact__contacts">
             <div className="contact__contacts-info">
               <FaMobileAlt className="info_icon " />
-              <h1>+244 024 411 3073</h1>
+
+              <a href="https://wa.me/233244113073" target="_blank">
+                <p>+233 244 113 073</p>
+                <h1>WhatsApp me</h1>
+              </a>
             </div>
             <div className="contact__contacts-info">
               <FaEnvelope className="info_icon " />

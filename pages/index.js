@@ -59,6 +59,7 @@ export default function Home() {
         <div className="mt1"></div>
         <section className="projects mt">
           <div className="mt1"></div>
+          <div className="mt"></div>
           <h1 className="title pb1">
             More <span className="blue">Projects</span>
           </h1>
@@ -345,7 +346,8 @@ export default function Home() {
           </div>
           <div className="about-content">
             <p>
-              I am Alex Otoo. I am a web developer who enjoys building engaging
+              As a self-taught web developer, the best part of what I do is
+              always learning and mastering my skills. I enjoy building engaging
               websites.
               <br /> I am currently focused on front-end, my motivation is to
               use my web development skills to develop results driven websites
