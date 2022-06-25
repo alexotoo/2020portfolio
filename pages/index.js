@@ -40,7 +40,6 @@ export default function Home() {
   }, []);
   return (
     <Layout>
-<<<<<<< HEAD
       <Head>
         <title>ALex Otoo Portfolio</title>
         <meta
@@ -52,21 +51,6 @@ export default function Home() {
         <h2 className="hero_text-greet">Hello!</h2>
         <h2 className="hero_text">I'm Alex Otoo</h2>
         <h1 className="hero_text">a web developer</h1>
-=======
-      <header className={styles.heroBox}>
-        <h2 className="title">Hello, Alex Otoo here.</h2>
-        <h1 className="sub-title">I am a web developer</h1>
-        <p className="text mt mb1">
-          let me help you standout with better, beautiful, professional and
-          improved websites.
-        </p>
-
-        <Link href="/contact">
-          <a>
-            <Btn>lets start</Btn>
-          </a>
-        </Link>
->>>>>>> version2021-portfolio
       </header>
       <main>
         <ProjectsSection />
@@ -140,15 +124,10 @@ export default function Home() {
                   </div>
                 </article>
                 <article className="projects__project-card">
-<<<<<<< HEAD
-                  <a href="https://xtremgym.netlify.app/" target="_blank">
-                    <img src="/images/project4.png" alt="" className="image" />
-                  </a>
-                  <Button>
-=======
                   <img src="/images/project4.png" alt="" className="image" />
                   <div className="visitBtn">
->>>>>>> version2021-portfolio
+                    <a href="https://xtremgym.netlify.app/" target="_blank"></a>
+
                     <a
                       href="https://github.com/alexotoo/xtrefit"
                       className="projects__codelinks"
