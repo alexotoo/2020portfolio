@@ -48,9 +48,18 @@ export default function Home() {
         />
       </Head>
       <header className="hero">
-        <h2 className="hero_text-greet">Hello!</h2>
-        <h2 className="hero_text">I'm Alex Otoo</h2>
-        <h1 className="hero_text">a web developer</h1>
+        <h2 className="title">Hello, Alex Otoo here.</h2>
+        <h1 className="sub-title">I am a web developer</h1>
+        <p className="text mt mb1">
+          let me help you standout with better, beautiful, professional and
+          improved websites.
+        </p>
+
+        <Link href="/contact">
+          <a>
+            <Btn>lets start</Btn>
+          </a>
+        </Link>
       </header>
       <main>
         <ProjectsSection />
