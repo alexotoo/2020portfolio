@@ -1,0 +1,16 @@
+//hero section of home page
+.heroBox {
+  height: 100vh;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 4rem 0 4rem;
+}
+@media (min-width: 1025px) {
+  .header {
+    display: flex;
+  }
+}

@@ -1,12 +1,16 @@
 import ContactForm from "../components/ContactForm";
 import Layout from "../components/Layout";
-import "../styles/styles.scss";
+
 import { FaMobileAlt, FaEnvelope } from "react-icons/fa";
+import NavMobile from "../components/NavMobile";
+import { useState } from "react";
 
 export default function contact() {
   return (
     <Layout>
+      <NavMobile />
       <main className="pages-pt contact-page">
+        <div className="mt1"></div>
         <p className="contact-page__intro">
           Welcome.
           <br />
@@ -15,15 +19,16 @@ export default function contact() {
           In case I miss your call or receive your mail, I will respond as soon
           as possible.
         </p>
+        <div className="mt1"></div>
         <section className="contact">
           <div className="contact__contacts">
             <div className="contact__contacts-info">
               <FaMobileAlt className="info_icon " />
-              <h1>+244 024 411 3073</h1>
+              <p> +1 (740) 605-3234</p>
             </div>
             <div className="contact__contacts-info">
               <FaEnvelope className="info_icon " />
-              <h1>alexotoous@outlook.com</h1>
+              <a href="mailto:alexotoous@gmail.com">alexotoous@gmail.com</a>
             </div>
           </div>
           <ContactForm />
