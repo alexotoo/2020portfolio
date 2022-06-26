@@ -354,21 +354,24 @@ export default function Home() {
           </div>
           <div className="about-content">
             <p>
-              As a self-taught web developer, the best part of what I do is
-              always learning and mastering my skills. I enjoy building engaging
-              websites.
-              <br /> I am currently focused on front-end, my motivation is to
-              use my web development skills to develop results driven websites
-              which offers maximum business solution potentials and sustained
-              clients satisfaction.
+              Over the years, I have continuously been horning my web
+              development skills. Currently, I work with an array of skill set
+              namely CSS, html, React js, JavaScript, Git, Node js, Next js,
+              REST API development, data persistent CRUD applications and more.
+              Among all these, what I find to be the most important skill set
+              for a successful self-taught web developer on top of a good
+              knowledge of your programming language is the ability to
+              understand documentations, use google search and the attitude of
+              persistence.
               <br /> <br /> Currently, I am available for freelancing or a
               suitable web development position with opportunities for
               continuous learning.
             </p>
             <div className="mb1"></div>
-            <Link href="/contact">
-              <a className="mt1">
-                <Btn>Contact Me</Btn>
+            <Link href="/about">
+              <a className="seeMore">
+                <p>More About Me</p>
+                <BsArrowRight />
               </a>
             </Link>
           </div>

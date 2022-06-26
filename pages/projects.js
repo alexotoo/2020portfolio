@@ -8,7 +8,6 @@ import { BsArrowRight } from "react-icons/bs";
 function projects() {
   return (
     <Layout>
-      <NavMobile />
       <section className="projects mt">
         <div className="mt1"></div>
         <div className="mt"></div>
@@ -141,6 +140,7 @@ function projects() {
         </div>
         <hr className="mt1" />
       </section>
+      <NavMobile />
     </Layout>
   );
 }

@@ -126,7 +126,7 @@ main {
   padding: 0 4rem 0 4rem;
 }
 .hero {
-  height: 70vh;
+  min-height: 100vh;
   font-size: 2rem;
   display: flex;
   flex-direction: column;
