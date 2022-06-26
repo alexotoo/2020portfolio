@@ -39,7 +39,7 @@ export default function Home() {
     });
   }, []);
   return (
-    <Layout>
+    <>
       <Head>
         <title>ALex Otoo Portfolio</title>
         <meta
@@ -393,6 +393,6 @@ export default function Home() {
         </section>
         <NavMobile />
       </main>
-    </Layout>
+    </>
   );
 }

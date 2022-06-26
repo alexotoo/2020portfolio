@@ -25,7 +25,7 @@ export default function Footer() {
       </div>
       <Logo />
       <h1>&#169; {new Date().getFullYear()}</h1>
-      <h2>Created with Next Js and Deployed on Netlify</h2>
+      <h2>Created with Next Js and Deployed on Vercel</h2>
     </footer>
   );
 }

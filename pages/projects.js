@@ -1,13 +1,8 @@
-import React, { useState } from "react";
-import Layout from "../components/Layout";
 import NavMobile from "../components/NavMobile";
-import Link from "next/link";
-
-import { BsArrowRight } from "react-icons/bs";
 
 function projects() {
   return (
-    <Layout>
+    <>
       <section className="projects mt">
         <div className="mt1"></div>
         <div className="mt"></div>
@@ -141,7 +136,7 @@ function projects() {
         <hr className="mt1" />
       </section>
       <NavMobile />
-    </Layout>
+    </>
   );
 }
 

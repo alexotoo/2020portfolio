@@ -7,7 +7,7 @@ import { useState } from "react";
 
 export default function contact() {
   return (
-    <Layout>
+    <>
       <NavMobile />
       <main className="pages-pt contact-page">
         <div className="mt1"></div>
@@ -34,6 +34,6 @@ export default function contact() {
           <ContactForm />
         </section>
       </main>
-    </Layout>
+    </>
   );
 }
