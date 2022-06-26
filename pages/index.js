@@ -382,15 +382,11 @@ export default function Home() {
           <div className="contact__contacts">
             <div className="contact__contacts-info">
               <FaMobileAlt className="info_icon " />
-
-              <a href="https://wa.me/233244113073" target="_blank">
-                <p>+233 244 113 073</p>
-                <h1>WhatsApp me</h1>
-              </a>
+              <p> +1 (740) 605-3234</p>
             </div>
             <div className="contact__contacts-info">
               <FaEnvelope className="info_icon " />
-              <h1>alexotoous@outlook.com</h1>
+              <a href="mailto:alexotoous@gmail.com">alexotoous@gmail.com</a>
             </div>
           </div>
           <ContactForm />

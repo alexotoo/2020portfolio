@@ -177,6 +177,11 @@ main {
   }
 }
 
+//about page
+.Page-about {
+  min-height: 100vh;
+}
+
 .aboutImage {
   animation: filtered 10s linear 4s infinite backwards;
 }
