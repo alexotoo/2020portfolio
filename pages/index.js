@@ -57,14 +57,13 @@ export default function Home() {
 
         <Link href="/contact">
           <a>
-            <Btn>lets start</Btn>
+            <Btn>let's talk</Btn>
           </a>
         </Link>
       </header>
       <main>
         <ProjectsSection />
-        <div className="mt1"></div>
-        <section className="projects mt">
+        <section className="projects">
           <div className="mt1"></div>
           <div className="mt"></div>
           <h1 className="title pb1">
