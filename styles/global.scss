@@ -127,13 +127,18 @@ main {
   padding: 0 4rem 0 4rem;
 }
 .hero {
-  min-height: 100vh;
+  min-height: 70vh;
   font-size: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .hero {
+    min-height: 100vh;
+  }
 }
 
 .text {
