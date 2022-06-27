@@ -89,21 +89,20 @@ export default function ProjectsSection() {
         </section>
         <section className="fproject" id="box3">
           <article className="card">
-            <img src="../images/projectapp.png" alt="" className="img" />
+            <img src="../images/jobshunt.png" alt="" className="img" />
             <div>
-              <h4>Team Note App</h4>
+              <h4>Job Hunt Records App</h4>
               <p className="blue">
-                React Js | Firebase | JavaScript | Bootstrap{" "}
+                Next.js | Express.js | REST API | Mongo DB | Node.js |
+                JavaScript | Chakra UI
               </p>
               <p className="mb">
-                A project team note app with firebase authentication and
-                firestore for data storage. SignUp and Login (with any fake
-                credentials) and explore the app.
+                A Full Stack web app with API hosted on Heroku and Front-End
+                hosted on Vercel. It’s a full CRUD application with Mongo DB
+                database implementation. Register and start keepng track of your
+                job applications
               </p>
-              <a
-                href="https://teamprojectapp.netlify.app/signin"
-                target="_blank"
-              >
+              <a href="https://jobsapps.vercel.app/" target="_blank">
                 <Btn> Live</Btn>
               </a>
             </div>
@@ -111,17 +110,17 @@ export default function ProjectsSection() {
         </section>
         <section className="fproject" id="box4">
           <article className="card">
-            <img src="../images/project4.png" alt="" className="img" />
+            <img src="../images/fitness.jpeg" alt="" className="img" />
             <div>
               <h4>Gym Website</h4>
-              <p className="blue">Bootstrap 5 | HTML | JavaScript | CSS</p>
+              <p className="blue">SASS/CSS | HTML | JavaScript |</p>
               <p className="mb">
                 Going to the gym should be exciting. That’s what this responsive
                 gym website is all about. Highly responsive gym website to get
                 you love going to gym.
               </p>
 
-              <a href="https://xtremgym.netlify.app/" target="_blank">
+              <a href="https://xfitnexgym.netlify.app/" target="_blank">
                 <Btn> Live</Btn>
               </a>
             </div>
