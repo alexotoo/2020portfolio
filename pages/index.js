@@ -92,52 +92,53 @@ export default function Home() {
                       Live Demo
                     </a>
                   </div>
+                  <p className="blue  ">Tailwind | CSS | JavaScript</p>
                 </article>
                 <article className="projects__project-card">
-                  <img src="/images/project2.png" alt="" className="image" />
+                  <img src="/images/projectapp.png" alt="" className="image" />
                   <div className="visitBtn">
                     <a
-                      href="https://github.com/alexotoo/job-agencey"
+                      href="https://github.com/alexotoo/project-app"
                       className="projects__codelinks"
                     >
                       Visit Code
                     </a>
 
                     <a
-                      href="https://alexooo-agency.netlify.app/"
+                      href="https://teamprojectapp.netlify.app/signin"
                       target="_blank"
                       className="projects__codelinks"
                     >
                       Live Demo
                     </a>
                   </div>
+                  <p className="blue  ">BootStrap 5 | Firebase | JavaScript</p>
                 </article>
                 <article className="projects__project-card">
-                  <img src="/images/project3.png" alt="" className="image" />
+                  <img src="/images/fitness.jpeg" alt="" className="image" />
                   <div className="visitBtn">
                     <a
-                      href="https://github.com/alexotoo/burgermeal/tree/main/Burger-Palce"
+                      href="https://github.com/alexotoo/xtremgym"
                       className="projects__codelinks"
                     >
                       Visit Code
                     </a>
 
                     <a
-                      href="https://burgerpalace.netlify.app/"
+                      href="https://xfitnexgym.netlify.app/"
                       target="_blank"
                       className="projects__codelinks"
                     >
                       Live Demo
                     </a>
                   </div>
+                  <p className="blue  ">SASS | CSS | HTML | JavaScript</p>
                 </article>
                 <article className="projects__project-card">
                   <img src="/images/project4.png" alt="" className="image" />
                   <div className="visitBtn">
-                    <a href="https://xtremgym.netlify.app/" target="_blank"></a>
-
                     <a
-                      href="https://github.com/alexotoo/xtrefit"
+                      href="https://github.com/alexotoo/XtremFit"
                       className="projects__codelinks"
                     >
                       Visit Code
@@ -151,27 +152,9 @@ export default function Home() {
                       Live Demo
                     </a>
                   </div>
+                  <p className="blue  ">Bootstrap | CSS | HTML | JavaScript</p>
                 </article>
-                <article className="projects__project-card">
-                  <img src="/images/project5.png" alt="" className="image" />
 
-                  <div className="visitBtn">
-                    <a
-                      href="https://github.com/alexotoo/Scooter-and-Bikes"
-                      className="projects__codelinks"
-                    >
-                      Visit Code
-                    </a>
-
-                    <a
-                      href="https://scooter-bikes.netlify.app/"
-                      target="_blank"
-                      className="projects__codelinks"
-                    >
-                      Live Demo
-                    </a>
-                  </div>
-                </article>
                 <article className="projects__project-card">
                   <img src="/images/project7.png" alt="" className="image" />
 
@@ -191,14 +174,9 @@ export default function Home() {
                       Live Demo
                     </a>
                   </div>
+                  <p className="blue  ">React Js | CSS | JavaScript </p>
                 </article>
               </div>
-              <Link href="/projects">
-                <a className="seeMore">
-                  <p>see more projects</p>
-                  <BsArrowRight />
-                </a>
-              </Link>
             </div>
           </div>
           <hr className="mt1" />
