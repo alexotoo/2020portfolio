@@ -187,7 +187,7 @@ main {
 
 .page-about {
   min-height: 100vh;
-  padding: 8rem 2rem 0 2rem;
+  padding: 10rem 2rem 0 2rem;
   text-align: justify;
 
   h1 + p {
@@ -444,6 +444,60 @@ main {
 .visitBtn {
   display: flex;
   justify-content: space-around;
+}
+
+//project page
+.project__page {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 10rem;
+}
+.featured {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  gap: 3rem;
+  margin-bottom: 10rem;
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-basis: 30%;
+    border-radius: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    background: var(--body-primary);
+    border: 1px solid var(--whitedeep-color);
+  }
+  &__img {
+    width: 100%;
+    height: 250px;
+  }
+  &__text {
+    padding: 10px;
+    text-align: center;
+  }
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+    margin-top: 4rem;
+  }
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-btn {
+      margin-top: 2rem;
+    }
+  }
 }
 
 //contact

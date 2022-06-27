@@ -56,7 +56,7 @@ export default function ProjectsSection() {
             <div>
               <h4>Cryptotoo</h4>
               <p className="blue">
-                NEXT JS | Chakra UI | JavaScript | greensock{" "}
+                NEXT JS | Chakra UI | JavaScript | GreenSock{" "}
               </p>
               <p className="mb">
                 Crypto businesses are all over the place. This website is a

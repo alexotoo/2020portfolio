@@ -42,24 +42,20 @@ const about = () => {
           </div>
           <div className="page-about__career">
             <div className="page-about__career-text">
-              <p className="page-about--heading">
-                Earlier non-tech profession:
-              </p>
+              <p className="page-about--heading">Non-tech Career:</p>
               <p className="firstLetter">
-                I started out my professional life as a public administrator
-                (Civil Servant) working at the Government Ministry in Ghana. As
-                an Assistant Director in charge of Policy on aging, I
-                successfully initiated and lead a Nationwide project of
-                registration of elderly people in Ghana onto a social support
-                project. This project was joint funded by the UNICEF and the
-                Government of Ghana. By the end of the first pilot phase over
-                22,000 aged persons 70years and over were registered unto the
-                project.
-                <br />
-                One climax of this project was when I was selected as part of a
-                delegation from Ghana to the United Nations Head Quarters for
-                the Commission for Social Development (CSocD) to present
-                projects on Ghana’s Social Protection System.
+                I began my professional career as a Public Administrator (Civil
+                Servant) working at the Government Ministry in Ghana. As the
+                Assistant Director in charge of Policy on Aging, I successfully
+                initiated and lead a Nationwide effort of registering elderly
+                people in Ghana onto a social support program. This effort was
+                joint funded by UNICEF and the Government of Ghana. By the end
+                of the first pilot phase, over 22,000 elderly citizens, 70 years
+                and over, were registered into the program. Based on my
+                successful development and implementation of the program, I was
+                selected as a Ghanian delegate to present Ghana’s social
+                projects at the United Nations Head Quarters for the Commission
+                for Social Development (CSocD).
               </p>
             </div>
             <figure className="page-about__career-picture">
@@ -81,24 +77,22 @@ const about = () => {
                 Masters in Germany and Web Development Journey:
               </p>
               <p className="firstLetter">
-                My desire to learn more landed me a master’s degree program in
-                Analysis and Design of Social Protection Systems Bonn, Germany
-                in 2017.
-                <br />
-                I've always been fascinated by how websites work but I was of
-                the view that web development was the preserve of Computer
-                Sciences (CS) holders. My curiosity led me to ask some CS
-                masters friends I had about web development. Their helpful
-                information, further research and learning since 2018 has
-                brought me this far, from a hobbyist to a fullstack web
-                developer.
+                My desire to continue learning led me to obtaining a Master’s
+                Degree in Analysis and Design of Social Protection Systems in
+                Bonn, Germany in 2017. While studying in Germany, I began
+                spending more time with Master’s level students in the Computer
+                Science program, providing me answers to the endless questions I
+                had always had regarding web development. The more I learned,
+                the more fascinated I became with web development, leading me to
+                become a fullstack web developer.
               </p>
             </div>
           </div>
           <p className="page-about--heading mt">Hobbies :</p>
           <p className="firstLetter ">
-            I enjoy travelling, coding for hobby yes coding is fun, cooking and
-            working out at the gym.
+            I enjoy travelling, coding for hobby (yes, I believe coding is
+            fun!), cooking, working out, and spending time with my wife on
+            various adventures.
           </p>
         </div>
         <div className="gallery">
