@@ -499,6 +499,15 @@ main {
     }
   }
 }
+@media (max-width: 768px) {
+  .pmx {
+    margin: 0 2rem 0 2rem;
+  }
+  .featured {
+    flex-direction: column;
+    margin: 0 2rem 0 2rem;
+  }
+}
 
 //contact
 .contact {

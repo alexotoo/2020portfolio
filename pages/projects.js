@@ -104,7 +104,7 @@ function projects() {
         <div className="project-showcase">
           {/* projects */}
           <div className="projects__skills mt ">
-            <div className="projects__projectwrapper">
+            <div className="projects__projectwrapper pmx">
               <article className="projects__project-card">
                 <img src="/images/project1.png" alt="" className="image" />
 
