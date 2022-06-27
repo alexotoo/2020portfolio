@@ -236,6 +236,107 @@ main {
   }
 }
 
+//about gallery
+.gallery {
+  background-color: var(--body-primary);
+  border-radius: 20px;
+
+  margin-top: 3rem;
+  grid-column: full-start / full-end;
+  gap: 0.5rem;
+
+  display: grid;
+
+  grid-template: repeat(7, 6vw) / repeat(8, 1fr);
+  padding: 1.5rem;
+
+  &__item {
+    background-color: var(--whitedeep-color);
+    border-radius: 20px;
+    padding: 0.2rem;
+    &--1 {
+      grid-row: 1 / span 2;
+      grid-column: 1 / span 2;
+    }
+
+    &--2 {
+      grid-row: 1 / span 3;
+      grid-column: 3 / span 3;
+    }
+
+    &--3 {
+      grid-row: 1 / span 2;
+      grid-column: 6 / 7;
+    }
+
+    &--4 {
+      grid-row: 1 / span 2;
+      grid-column: 7 / -1;
+    }
+
+    &--5 {
+      grid-row: 3 / span 3;
+      grid-column: 1 / span 2;
+    }
+
+    &--6 {
+      grid-row: 4 / span 2;
+      grid-column: 3 / span 2;
+    }
+
+    &--7 {
+      grid-row: 4 / 5;
+      grid-column: 5 / 6;
+    }
+
+    &--8 {
+      grid-row: 3 / span 2;
+      grid-column: 6 / span 2;
+    }
+
+    &--9 {
+      grid-row: 3 / span 3;
+      grid-column: 8 / -1;
+    }
+
+    &--10 {
+      grid-row: 6 / span 2;
+      grid-column: 1 / 2;
+    }
+
+    &--11 {
+      grid-row: 6 / span 2;
+      grid-column: 2 / span 2;
+    }
+
+    &--12 {
+      grid-row: 6 / span 2;
+      grid-column: 4 / 5;
+    }
+
+    &--13 {
+      grid-row: 5 / span 3;
+      grid-column: 5 / span 3;
+    }
+
+    &--14 {
+      grid-row: 6 / span 2;
+      grid-column: 8 / -1;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+  }
+  figure {
+    margin: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .page-about {
     &__career {
@@ -583,7 +684,7 @@ footer .icon-gt:first-of-type {
   color: var(--white-color);
 }
 footer .icon-dev:nth-of-type(2n) {
-  color: var(--graylight-color);
+  color: #1da1f2;
 }
 footer .icon-t:nth-of-type(3n) {
   color: var(--bluedeep-color);
@@ -594,12 +695,15 @@ footer .icon-gt:hover {
   transform: scale(1.15);
 }
 footer .icon-dev:hover {
-  color: #3d3d3d;
+  color: #0966c2;
   transform: scale(1.15);
 }
 footer .icon-t:hover {
   color: #1da1f2;
   transform: scale(1.15);
+}
+.footer__social > * {
+  font-size: 40px;
 }
 
 //NavMobile

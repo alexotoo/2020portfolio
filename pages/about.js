@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 
 import NavMobile from "../components/NavMobile";
 const about = () => {
@@ -94,6 +95,111 @@ const about = () => {
               </p>
             </div>
           </div>
+          <p className="page-about--heading mt">Hobbies :</p>
+          <p className="firstLetter ">
+            I enjoy travelling, coding for hobby yes coding is fun, cooking and
+            working out at the gym.
+          </p>
+        </div>
+        <div className="gallery">
+          <figure class="gallery__item gallery__item--1">
+            <img
+              src="images/gal-1.jpeg"
+              alt="Gallery image 1"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--2">
+            <img
+              src="images/gal-2.jpeg"
+              alt="Gallery image 2"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--3">
+            <img
+              src="images/gal-3.jpeg"
+              alt="Gallery image 3"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--4">
+            <img
+              src="images/gal-12.jpeg"
+              alt="Gallery image 4"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--5">
+            <img
+              src="images/gal-5.jpeg"
+              alt="Gallery image 5"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--6">
+            <img
+              src="images/gal-6.jpeg"
+              alt="Gallery image 6"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--7">
+            <img
+              src="images/gal-7.jpeg"
+              alt="Gallery image 7"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--8">
+            <img
+              src="images/gal-8.jpeg"
+              alt="Gallery image 8"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--9">
+            <img
+              src="images/gal-15.jpeg"
+              alt="Gallery image 9"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--10">
+            <img
+              src="images/gal-10.jpeg"
+              alt="Gallery image 10"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img
+              src="images/gal-11.jpeg"
+              alt="Gallery image 11"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--12">
+            <img
+              src="images/gal-4.jpeg"
+              alt="Gallery image 12"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--13">
+            <img
+              src="images/gal-13.jpeg"
+              alt="Gallery image 13"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--14">
+            <img
+              src="images/gal-14.jpeg"
+              alt="Gallery image 14"
+              class="gallery__img"
+            />
+          </figure>
         </div>
       </section>
     </>

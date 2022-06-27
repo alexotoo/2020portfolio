@@ -1,4 +1,5 @@
 import { FaGithubSquare, FaDev, FaTwitterSquare } from "react-icons/fa";
+import { GrLinkedin } from "react-icons/gr";
 import Logo from "./Logo";
 
 export default function Footer() {
@@ -12,8 +13,12 @@ export default function Footer() {
         >
           <FaGithubSquare />
         </a>
-        <a href="https://dev.to/alexooo" target="_blank" className="icon-dev">
-          <FaDev />
+        <a
+          href="https://www.linkedin.com/in/abrahamalexotoo/"
+          target="_blank"
+          className="icon-dev"
+        >
+          <GrLinkedin />
         </a>
         <a
           href="https://twitter.com/Qwesi_Alex"
