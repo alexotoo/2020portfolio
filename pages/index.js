@@ -333,11 +333,11 @@ export default function Home() {
           </div>
           <div className="about-content">
             <p>
-              Over the years, I have continuously been horning my web
-              development skills. Currently, I work with an array of skill set
-              namely CSS, html, React js, JavaScript, Git, Node js, Next js,
-              REST API development, data persistent CRUD applications and more.
-              As a self-taught web developer, I believe what makes one a good or
+              Over the years, I have continuously been honing my web development
+              skills. Currently, I work with an array of skill set namely CSS,
+              html, React js, JavaScript, Git, Node js, Next js, REST API
+              development, data persistent CRUD applications and more. As a
+              self-taught web developer, I believe what makes one a good or
               successful web developer is good knowledge of your programming
               language, the ability to understand documentations, effectively
               use google search and most importantly the attitude of
