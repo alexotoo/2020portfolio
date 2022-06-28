@@ -30,13 +30,13 @@ const about = () => {
             <p className="page-about--heading">Me Now ! :</p>
             <p className="firstLetter">
               Over the years, I have continuously been honing my web development
-              skills. Currently, I work with an array of skill set namely CSS,
-              html, React js, JavaScript, Git, Node js, Next js, REST API
-              development, data persistent CRUD applications and more. Among all
-              these, what I find to be the most important skill set for a
-              successful self-taught web developer on top of a good knowledge of
-              your programming language is the ability to understand
-              documentations, use google search and the attitude of persistence.
+              skills. Currently, I work with an array of skill sets namely CSS,
+              HTML, React js, JavaScript, Git, Node js, Next js, REST API
+              development, data persistent CRUD applications, and more. As a
+              self-taught web developer, I believe what makes one a good or
+              successful web developer is good knowledge of your programming
+              language, the ability to understand documentation, effectively use
+              google search, and most importantly the attitude of persistence.
             </p>
           </div>
           <div className="page-about__career">
