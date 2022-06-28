@@ -51,7 +51,7 @@ export default function Home() {
         <h2 className="title">Hello, Alex Otoo here.</h2>
         <h1 className="sub-title">I am a web developer</h1>
         <p className="text mt mb1">
-          I am driving by the passion to learn and the humble power web
+          I am driven by the passion to learn and the humble power web
           developers possess in making the internet and web experience an
           enjoyable one.
         </p>
