@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Image from "next/image";
 
 import NavMobile from "../components/NavMobile";
 const about = () => {
@@ -16,7 +15,7 @@ const about = () => {
             <h1 className="title ">
               I'm <span className="blue">Alex</span>
             </h1>
-            <p>A passonate web developer</p>
+            <p>A passionate web developer</p>
           </div>
           <div className="about-heading__img">
             <img

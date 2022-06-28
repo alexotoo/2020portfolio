@@ -51,8 +51,9 @@ export default function Home() {
         <h2 className="title">Hello, Alex Otoo here.</h2>
         <h1 className="sub-title">I am a web developer</h1>
         <p className="text mt mb1">
-          let me help you standout with better, beautiful, professional and
-          improved websites.
+          I am driving by the passion to learn and the humble power web
+          developers possess in making the internet and web experience an
+          enjoyable one.
         </p>
 
         <Link href="/contact">
@@ -336,10 +337,10 @@ export default function Home() {
               development skills. Currently, I work with an array of skill set
               namely CSS, html, React js, JavaScript, Git, Node js, Next js,
               REST API development, data persistent CRUD applications and more.
-              Among all these, what I find to be the most important skill set
-              for a successful self-taught web developer on top of a good
-              knowledge of your programming language is the ability to
-              understand documentations, use google search and the attitude of
+              As a self-taught web developer, I believe what makes one a good or
+              successful web developer is good knowledge of your programming
+              language, the ability to understand documentations, effectively
+              use google search and most importantly the attitude of
               persistence.
               <br /> <br /> Currently, I am available for freelancing or a
               suitable web development position with opportunities for
