@@ -50,11 +50,13 @@ export default function Home() {
       <header className="hero">
         <h2 className="title">Hello, Alex Otoo here.</h2>
         <h1 className="sub-title">I am a web developer</h1>
-        <p className="text mt mb1">
-          I am driven by the passion to learn and the humble power web
-          developers possess in making the internet and web experience an
-          enjoyable one.
-        </p>
+        <div className="fit">
+          <p className="text mt mb1">
+            I am driven by the passion to learn and the humble power web
+            developers possess in making the internet and web experience an
+            enjoyable one.
+          </p>
+        </div>
 
         <Link href="/contact">
           <a>
