@@ -33,10 +33,10 @@ const about = () => {
               skills. Currently, I work with an array of skill sets namely CSS,
               HTML, React js, JavaScript, Git, Node js, Next js, REST API
               development, data persistent CRUD applications, and more. As a
-              self-taught web developer, I believe what makes one a good or
-              successful web developer is good knowledge of your programming
-              language, the ability to understand documentation, effectively use
-              google search, and most importantly the attitude of persistence.
+              self-taught web developer, I believe a successful web developer
+              should have good inter-personal skills, knowledge of the
+              programming language of choice, the ability to understand
+              documentation and enthusiastic about learning new tech trends.
             </p>
           </div>
           <div className="page-about__career">
@@ -80,8 +80,8 @@ const about = () => {
                 Degree in Analysis and Design of Social Protection Systems in
                 Bonn, Germany in 2017. While studying in Germany, I began
                 spending more time with Master’s level students in the Computer
-                Science program, providing me answers to the endless questions I
-                had always had regarding web development. The more I learned,
+                Science program, who provided me answers to the endless
+                questions I had regarding web development. The more I learned,
                 the more fascinated I became with web development, leading me to
                 become a fullstack web developer.
               </p>
