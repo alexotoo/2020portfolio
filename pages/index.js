@@ -256,7 +256,7 @@ export default function Home() {
             </article>
             <article className="projects__card">
               <img
-                src="/images/skills-photoshop.png"
+                src="/images/skills-Photoshop.png"
                 alt="photoshop icon"
                 className="projects__skillicon"
               />
