@@ -98,9 +98,9 @@ export default function ProjectsSection() {
               </p>
               <p className="mb">
                 A Full Stack web app with API hosted on Heroku and Front-End
-                hosted on Vercel. It’s a full CRUD application with Mongo DB
-                database implementation. Register and start keepng track of your
-                job applications
+                hosted on Vercel. A Full stack job hunt application tracker to
+                help job seekers keep track of the status of their job
+                applications.
               </p>
               <a href="https://jobsapps.vercel.app/" target="_blank">
                 <Btn> Live</Btn>
