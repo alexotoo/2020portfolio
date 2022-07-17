@@ -363,7 +363,7 @@ export default function Home() {
           <div className="contact__contacts">
             <div className="contact__contacts-info">
               <FaEnvelope className="info_icon " />
-              <a href="mailto:alexotoous@gmail.com">info@alexotoo.dev</a>
+              <a href="mailto:info@alexotoo.dev">info@alexotoo.dev</a>
             </div>
           </div>
           <ContactForm />
