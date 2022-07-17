@@ -23,12 +23,8 @@ export default function contact() {
         <section className="contact">
           <div className="contact__contacts">
             <div className="contact__contacts-info">
-              <FaMobileAlt className="info_icon " />
-              <p> +1 (740) 605-3234</p>
-            </div>
-            <div className="contact__contacts-info">
               <FaEnvelope className="info_icon " />
-              <a href="mailto:alexotoous@gmail.com">alexotoous@gmail.com</a>
+              <a href="mailto:alexotoous@gmail.com">info@alexotoo.dev</a>
             </div>
           </div>
           <ContactForm />
