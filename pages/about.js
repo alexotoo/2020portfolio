@@ -29,14 +29,16 @@ const about = () => {
           <div>
             <p className="page-about--heading">Me Now ! :</p>
             <p className="firstLetter">
-              Over the years, I have continuously been honing my web development
-              skills. Currently, I work with an array of skill sets namely CSS,
-              HTML, React js, JavaScript, Git, Node js, Next js, REST API
-              development, data persistent CRUD applications, and more. As a
-              self-taught web developer, I believe a successful web developer
-              should have good inter-personal skills, knowledge of the
-              programming language of choice, the ability to understand
-              documentation and enthusiastic about learning new tech trends.
+              Alex is a seasoned web developer with 5+ years of working
+              experience. He has worked with the Government of Ghana on numerous
+              projects. He is proficient in coding both Front-End and Back-End
+              applications. Having worked extensively with JavaScript, PHP,
+              Node.JS, he is able to transform complex UI/UX into functioning
+              web applications. He has demonstrable skills in development tools
+              such a CSS, HTML, SASS, Bootstrap, Next.JS, WordPress and other
+              CMS/Headless CMS like Strapi, Contentful, and googles firebases.
+              He is a fast learner and a passion for web applications
+              development.
             </p>
           </div>
           <div className="page-about__career">
@@ -47,10 +49,7 @@ const about = () => {
                 Servant) working at the Government Ministry in Ghana. As the
                 Assistant Director in charge of Policy on Aging, I successfully
                 initiated and lead a Nationwide effort of registering elderly
-                people in Ghana onto a social support program. This effort was
-                joint funded by UNICEF and the Government of Ghana. By the end
-                of the first pilot phase, over 22,000 elderly citizens, 70 years
-                and over, were registered into the program. Based on my
+                people in Ghana onto a social support program. Based on my
                 successful development and implementation of the program, I was
                 selected as a Ghanian delegate to present Ghana’s social
                 projects at the United Nations Head Quarters for the Commission
@@ -78,12 +77,11 @@ const about = () => {
               <p className="firstLetter">
                 My desire to continue learning led me to obtaining a Master’s
                 Degree in Analysis and Design of Social Protection Systems in
-                Bonn, Germany in 2017. While studying in Germany, I began
-                spending more time with Master’s level students in the Computer
-                Science program, who provided me answers to the endless
-                questions I had regarding web development. The more I learned,
-                the more fascinated I became with web development, leading me to
-                become a fullstack web developer.
+                Bonn, Germany in 2017. While studying in Germany, I continued
+                perfecting my programming and web development skills spending
+                more time with Master’s level students in the Computer Science
+                program. I gained a lot of experience practicing and working on
+                projects to get better at coding.
               </p>
             </div>
           </div>
