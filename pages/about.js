@@ -29,13 +29,13 @@ const about = () => {
           <div>
             <p className="page-about--heading">Me Now ! :</p>
             <p className="firstLetter">
-              Alex is a seasoned web developer with 5+ years of working
-              experience. He has worked with the Government of Ghana on numerous
-              projects. He is proficient in coding both Front-End and Back-End
+              Alex is a seasoned web developer with years of working experience.
+              He has worked with the Government of Ghana on numerous projects.
+              He is proficient in coding both Front-End and Back-End
               applications. Having worked extensively with JavaScript, PHP,
               Node.JS, he is able to transform complex UI/UX into functioning
               web applications. He has demonstrable skills in development tools
-              such a CSS, HTML, SASS, Bootstrap, Next.JS, WordPress and other
+              such a React Js, CSS, HTML, SASS, Next.JS, WordPress and other
               CMS/Headless CMS like Strapi, Contentful, and googles firebases.
               He is a fast learner and a passion for web applications
               development.
