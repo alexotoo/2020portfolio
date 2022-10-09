@@ -6,12 +6,7 @@ import Script from "next/script";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Head>
-        <link rel="shortcut icon" href="/images/favicon.png" />
-      </Head>
-
-      {/* <Script
-        async
+      <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA4_ID}`}
         strategy="afterInteractive"
       ></Script>
@@ -22,9 +17,12 @@ function MyApp({ Component, pageProps }) {
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', ${process.env.NEXT_PUBLIC_GA4_ID});
+          gtag('config', '${process.env.NEXT_PUBLIC_GA4_ID}');
         `}
-      </Script> */}
+      </Script>
+      <Head>
+        <link rel="shortcut icon" href="/images/favicon.png" />
+      </Head>
 
       <Layout>
         <Component {...pageProps} />
