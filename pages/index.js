@@ -1,18 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
-import Layout from "../components/Layout";
-import {
-  FaMobileAlt,
-  FaEnvelope,
-  FaArrowAltCircleLeft,
-  FaArrowRight,
-} from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
 
 import ContactForm from "../components/ContactForm";
 import { Button as Btn } from "../components/UtillsAndLayoutComponents";
 import NavMobile from "../components/NavMobile";
-import styles from "../components/homePage.module.scss";
 import ProjectsSection from "../components/ProjectsSection";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -76,6 +69,20 @@ export default function Home() {
             {/* projects */}
             <div className="projects__skills mt ">
               <div className="projects__projectwrapper">
+                <article className="projects__project-card">
+                  <img src="/images/project8.png" alt="" className="image" />
+
+                  <div className="visitBtn">
+                    <a
+                      href="https://freelancedemo.vercel.app/"
+                      target="_blank"
+                      className="projects__codelinks"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
+                  <p className="blue  ">Bootstrap css | CSS | JavaScript</p>
+                </article>
                 <article className="projects__project-card">
                   <img src="/images/project1.png" alt="" className="image" />
 
